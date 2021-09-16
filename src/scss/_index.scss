@@ -33,10 +33,10 @@ code {
   );*/
 
   background-size: 1200% 1200%;
-  -webkit-animation: BackgroundAnimation 70s ease infinite;
-  -moz-animation: BackgroundAnimation 70s ease infinite;
-  -o-animation: BackgroundAnimation 70s ease infinite;
-  animation: BackgroundAnimation 70s ease infinite;
+  -webkit-animation: BackgroundAnimation 200s ease infinite;
+  -moz-animation: BackgroundAnimation 200s ease infinite;
+  -o-animation: BackgroundAnimation 200s ease infinite;
+  animation: BackgroundAnimation 200s ease infinite;
   height: 100%;
 }
 
@@ -46,11 +46,11 @@ code {
 
 .navbar-transparent {
   background-color: rgba(255, 255, 255, 0);
-  transition: background-color 0.2s;
+  transition: background-color 10s;
 }
 .navbar-white {
   background-color: rgba(234, 236, 239, 0.81);
-  transition: background-color 0.2s;
+  transition: background-color 10s;
 }
 .brand {
   color: #363636 !important;

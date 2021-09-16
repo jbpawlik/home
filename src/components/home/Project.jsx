@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row";
-import ProjectCard from "./ProjectCard";
+// import ProjectCard from "./ProjectCard";
+import {Card} from "react-bootstrap"
 import axios from "axios";
 
 const dummyProject = {
@@ -58,7 +60,63 @@ const Project = ({ heading, username, length, specfic }) => {
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
-        <Row>
+        <Row textAlign="center">
+          <Col md={6}>
+            <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+              <Card.Body>
+                <Card.Title as="h5">
+                   Mario's Fine Foods
+                  <img src="https://github.com/jbpawlik/specialty_foods/blob/main/app/assets/images/specialtyfoodsproducts-cropped.PNG?raw=true" alt="Mario's" width="100%"></img>
+                </Card.Title>
+                <Card.Text>
+                  <p>Website for a specialty grocer written in Ruby on Rails and JavaScript using a SQL database and user authentication.</p>
+                  <a href="https://marios-fine-foods.herokuapp.com/" alt="Mario's">Live Site</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6}>
+            <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+              <Card.Body>
+                <Card.Title as="h5">
+                  <h5>Currency X Change</h5>
+                  <img src="https://raw.githubusercontent.com/jbpawlik/jbpawlik/main/currency-x-change.PNG" alt="Currency X Change" width="100%"></img>
+                </Card.Title>
+                <Card.Text>
+                  <p>Provides forex rates for USD and global currencies. Uses API calls to query a database to allow user to convert currency. Built in JavaScript and HTML/CSS.</p>
+                  <a href="https://jbpawlik.github.io/currency-exchanger/" alt="Currency X Change">Live Site</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6}>
+            <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+              <Card.Body>
+                <Card.Title as="h5">
+                  <h5>OKBloomer</h5>
+                  <img src="https://raw.githubusercontent.com/jbpawlik/OKBloomer/main/app/assets/images/OKBloomerComposite.png" alt="OKBloomer" width="100%"></img>
+                </Card.Title>
+                <Card.Text>
+                  <p>An app for tracking the health of a user's plants.</p>
+                  <a href="http://okbloomer.herokuapp.com/" alt="OKBloomer">Live Site</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* <Col md={6}>
+            <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+              <Card.Body>
+                <Card.Title as="h5">
+                  <h5>Mario's Fine Foods</h5>
+                </Card.Title>
+                <Card.Text>
+                  <p>Website for a specialty grocer written in Ruby on Rails and JavaScript using a SQL database and user authentication.</p>
+                  <a href="https://marios-fine-foods.herokuapp.com/" alt="Mario's">Live Site</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col> */}
+          {/* <Col className="lg-6">
           {projectsArray.length
             ? projectsArray.map((project, index) => (
                 <ProjectCard
@@ -74,6 +132,7 @@ const Project = ({ heading, username, length, specfic }) => {
                   value={project}
                 />
               ))}
+              </Col> */}
         </Row>
       </Container>
     </Jumbotron>

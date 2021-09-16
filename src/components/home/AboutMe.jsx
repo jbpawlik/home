@@ -37,17 +37,16 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         <div className="row">
           <div className="col-5 d-none d-lg-block align-self-center">
             {showPic && (
-              <img
-                className="border border-secondary rounded-circle"
+              <img 
                 src={profilePicUrl}
                 alt="profilepicture"
-                width={imgSize}
-                height={imgSize}
+                width='450px'
+                height='300px'
               />
             )}
           </div>
 
-          <div className={`col-lg-${showPic ? "7" : "12"}`}>
+          <div className={`col-lg-${showPic ? "7" : "12"}`} style={{maxWidth: "100%"}}> 
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
             <p className="lead text-center">{message}</p>
             {resume && (
