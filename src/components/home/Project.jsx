@@ -61,6 +61,20 @@ const Project = ({ heading, username, length, specfic }) => {
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <Row textAlign="center">
+        <Col md={6}>
+            <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+              <Card.Body>
+                <Card.Title as="h5">
+                   SwimNW
+                  <img src="https://raw.githubusercontent.com/jbpawlik/SwimNW/main/src/assets/images/SwimNW.png" alt="SwimNW" width="100%"></img>
+                </Card.Title>
+                <Card.Text>
+                  <p>Cross-platform mobile app for hydrophiles in the Pacific Northwest. Soon to be available on Google Play and the App Store.</p>
+                  <a href="https://www.github.com/jbpawlik/SwimNW" alt="SwimNW">Github Repository</a>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col md={6}>
             <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
               <Card.Body>
@@ -103,36 +117,6 @@ const Project = ({ heading, username, length, specfic }) => {
               </Card.Body>
             </Card>
           </Col>
-          {/* <Col md={6}>
-            <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-              <Card.Body>
-                <Card.Title as="h5">
-                  <h5>Mario's Fine Foods</h5>
-                </Card.Title>
-                <Card.Text>
-                  <p>Website for a specialty grocer written in Ruby on Rails and JavaScript using a SQL database and user authentication.</p>
-                  <a href="https://marios-fine-foods.herokuapp.com/" alt="Mario's">Live Site</a>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col> */}
-          {/* <Col className="lg-6">
-          {projectsArray.length
-            ? projectsArray.map((project, index) => (
-                <ProjectCard
-                  key={`project-card-${index}`}
-                  id={`project-card-${index}`}
-                  value={project}
-                />
-              ))
-            : dummyProjectsArr.map((project, index) => (
-                <ProjectCard
-                  key={`dummy-${index}`}
-                  id={`dummy-${index}`}
-                  value={project}
-                />
-              ))}
-              </Col> */}
         </Row>
       </Container>
     </Jumbotron>

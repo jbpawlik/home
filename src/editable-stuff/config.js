@@ -90,6 +90,7 @@ const skills = {
   hardSkills: [
     { name: "JavaScript", value: 90 },
     { name: "SQL", value: 75 },
+    { name: "NoSQL", value: 65 },
     { name: "React", value: 85 },
     { name: "React Native", value: 85 },
     { name: "Ruby", value: 90 },
