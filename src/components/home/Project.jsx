@@ -69,7 +69,7 @@ const Project = ({ heading, username, length, specfic }) => {
                   <img src="https://raw.githubusercontent.com/jbpawlik/SwimNW/main/src/assets/images/SwimNW.png" alt="SwimNW" width="100%"></img>
                 </Card.Title>
                 <Card.Text>
-                  <p>Cross-platform mobile app for hydrophiles in the Pacific Northwest. Soon to be available on Google Play and the App Store.</p>
+                  <p>Cross-platform mobile app for hydrophiles in the Pacific Northwest. Live on Google Play and soon to be live on the App Store.</p>
                   <a href="https://www.github.com/jbpawlik/SwimNW" alt="SwimNW">Github Repository</a>
                 </Card.Text>
               </Card.Body>
