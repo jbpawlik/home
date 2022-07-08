@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "James",
   middleName: "Benjamin",
   lastName: "Pawlik",
-  message: "Web and mobile developer based out of Portland, Oregon",
+  message: "Web, mobile, and business intelligence developer based out of Portland, Oregon",
   icons: [
     {
       image: "fa-github",
@@ -42,8 +42,8 @@ const about = {
   imageLink: require("../editable-stuff/lumberjacks.jpg"),
   imageSize: 375,
   message:
-    "My name is Ben Pawlik. I am a software developer based out of Portland, Oregon. My professional interests are web and mobile development, Ruby, JavaScript / React [Native], and UI/UX. In previous careers, I worked in education and human development. In my personal life I am interested in art, design, cooking, and the outdoors.",
-  resume: "https://docs.google.com/document/d/1CaX3bxEkmHFtjpNuc5f0683s09GzvoWZ04dlsgRrlTc/edit",
+    "My name is Ben Pawlik. I am a software developer based out of Portland, Oregon. My professional interests are web and mobile development, business intelligence, data transformation, Ruby, JavaScript / React [Native], and UI/UX design. In previous careers, I worked in education and human development. In my personal life I am interested in art, design, cooking, and evolution.",
+  resume: "https://drive.google.com/file/d/1Uu6xtP1t3HwuvbUJX3YvQ72Y2ILDdyyL/view?usp=sharing",
 };
 
 // PROJECTS SECTION
